@@ -18,8 +18,8 @@ For reference, follow https://docs.datadoghq.com/tracing/setup/java/
 Set the service-name using environment variable `SERVICE_NAME`
 
 To use it, all we have to do is call  
-```(datadog-apm-clj-wrapper.core/instrument operation-name operation-as-a-fn)```
+```(datadog-apm-clj-wrapper.core/instrumentation operation-name operation-as-a-fn)```
 
 ### Example
 
-```(datadog-apm-clj-wrapper.core/instrument "sum-two-numbers" #(+ 4 1)) ```
+```(datadog-apm-clj-wrapper.core/instrumentation "sum-two-numbers" #(+ 4 1)) ```
